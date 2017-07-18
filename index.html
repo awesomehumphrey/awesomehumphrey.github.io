@@ -1,23 +1,124 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Melbourne Pedestrian Counting System</title>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+	<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+<script>
 
-<div class="home">
+var yellow = d3.interpolateYlGn(0), // "rgb(255, 255, 229)"
+    yellowGreen = d3.interpolateYlGn(0.5), // "rgb(120, 197, 120)"
+    green = d3.interpolateYlGn(1); // "rgb(0, 69, 41)"
 
-  <h1 class="page-heading">Posts</h1>
+</script>
+    
+<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+<script src='https://api.mapbox.com/mapbox.js/v3.0.1/mapbox.js'></script>
+<link href='https://api.mapbox.com/mapbox.js/v3.0.1/mapbox.css' rel='stylesheet' />
+<!-- New Humphrey -->
+<link rel = "stylesheet" type = "text/css" href = "style/style.css" />
+<style>
+  
+</style>
+</head>
+<body align=center>
+<div id="header" align=center>
+	<h1 id="mytitle">Pedestrian Data Visualisation</h1>
+	<div id="choices">
+	<label>Date: </label><input class="selectDate" type="date" title="Select date to display" id="mydate"/>
+	<label>Or </label>
+	<select class="option selectEvent" title="Select event to display" id="newIncident">
+		<option selected="selected" value="2013-01-01">Select event</option>
+		<option value="2013-09-07">Federal Elections 2013</option>
+		<option value="2013-02-10">Lunar New year 2013</option>
+		<option value="2014-11-29">State Elections 2014</option>
+		<option value="2014-12-25">Christmas 2014</option>
+		<option value="2015-12-25">Christmas 2015</option>
+	</select>
+	<label>Hour (24): </label><input class="selectTime" type="number" title="Select hour to display" id="mytime" value="0" min="0" max="23"/>
+	<input type="button" title="Start / Stop animation" id="play" value="Start"/> 
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+    <!--Average Temperature:  <select id="mode">
+        <option value="temp">Cold/Hot</option>
+        <option value="weekday">Weekday/Weekend</option>
+    </select> --> 
+	
+    
+		
+	<!--NEW Humphrey
+	<select id = "">
+		<option value = "">AM</option>
+		<option value = "">PM</option>
+	</select>	-->
 
 </div>
+
+<!--<div style="margin-top:20px">
+	<img src="images/dino.png" id="incident" width=80 style="cursor:pointer"/> 	-->	<!--onmouseover="setImg('lightning')" onmouseout="setImg('dino')" o/>-->
+	<!--
+	<script>
+	function setImg(img){
+	
+	var myimg = document.getElementById("incident");
+	if(img == "dino") {
+	myimg.src = "images/dino.png";
+	myimg.width = 80;
+	}
+	
+	else if(img == "lightning") {
+	myimg.src = "images/lightning.png";
+	myimg.width = 40;
+	}
+	}
+	</script>
+	-->
+	
+	</div>
+<!-- New Humphrey--> 
+<!-- <div id="divLegend">
+	<h4>onHover: Temperature Legend</h4>
+	
+	<ul class="legend">
+		<li><span id="burst-12r"></span><p id="baa">Hot</p></li>
+		<li><span id="burst-12b"></span><p id="baa">Cold</p></li>
+	</ul>
+</div> -->
+<div class='my-legend' id='divLegend'>
+<div class='legend-title'>Temperature</div>
+<div class='legend-scale'>
+  <ul class='legend-labels'>
+    <!-- <li><span style='background:#d7191c;'></span><p>5</p></li> -->
+    <li><span style='background:#e76818;'></span><p></p></li>
+    <li><span style='background:#f29e2e;'></span><p>40&#8451;</p></li>
+    <li><span style='background:#f9d057;'></span><p>32&#8451;</p></li>
+    <li><span style='background:#ffff8c;'></span><p>24&#8451;</p></li>
+	<!-- <li><span style='background:#90eb9d;'></span><p>5</p></li> -->
+    <li><span style='background:#00ccbc;'></span><p>16&#8451;</p></li>
+    <li><span style='background:#00a6ca;'></span><p>8&#8451;</p></li>
+    <!-- <li><span style='background:#2c7bb6;'></span><p>20</p></li> -->
+  </ul>
+</div>
+</div>
+
+<div id="container">
+<div id="weekday">
+	<h3></h3>
+</div>
+<div id="temp">
+	<h3><em>Temperature (&deg;C)</em></h3>
+	<ul id="list"></ul>
+</div>
+</div>
+<div id="map"></div>
+<div id="curtain"></div>
+<div id="categories"><h3 style="float: left">Location Categories</h3></div>
+
+<div id="footer">
+	<!--<input id="myslider" type="range" style="width:800px"  min="0" max="100" onchange="sliderChanged(this)" />-->
+</div>
+    <svg class="canvas" width="960px" height="600px"></svg>
+    <script src="dist/bundle.js"></script>
+</body>
+</html>
+

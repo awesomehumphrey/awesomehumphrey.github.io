@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body { margin:0; 
+	padding:0; 
+    //background: url("/images/com_bg.png") center top no-repeat;
+    //background-image: url("/images/com_bg.png");
+    background-position-x: center;
+    background-position-y: top;
+    background-size: initial;
+    background-repeat-x: no-repeat;
+    background-repeat-y: no-repeat;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: #fff;
+    background-color: #fff;}
+ 
+  #map { position:relative; top:0; bottom:0; width:960px; height: 600px; margin: 0 auto;  margin-top: 15px; margin-right: -30px; background-color: rgba(0,24,72, 0.40); }
+  #container {border: 2px solid grey; width: 190px; height: 120px; position: absolute; margin-left: 272px; margin-right: 10px; padding: 0px; float: left;}
+  #weekday { margin-top: 5px; }
+  #temp {margin-top: 10px; }
+
+  #temp ul {
+    margin-left: 50px;
+	display: table
+  }
+
+  /#temp li {  */
+    /* padding-left: 0px;  */
+	display: table-cell;
+   } 
+
+  #baa {background-color: rgba(96,72,120, 1); }
+  input {font-size: 24px;} 
+  select { font-size: 20px; padding: 10px; }
+  #categories { position:relative; width:800px; height: 75px; margin: 0 auto; }
+  
+  #divLegend {width: 300px; height: 200px; float: right; position: relative; margin-right: 151px; margin-left: 50px; margin-top: 100px;}
+  .legend {list-style: none;}
+  .legend li {float: left; margin-right: 10px; margin-left: 20px;}
+  .legend span {border: 1px solid #ccc; float: left; width: 15px; height: 15px; margin-top: 0px;}
+  //.legend .hot {background-color: red; opacity: 0.5;}
+  //.legend .cold {background-color: blue; opacity: 0.5}
+  #choices {margin-bottom: 30px; margin-top: 50px; font-family: Georgia; font-size: 20px;}
+  
+#baa {margin-bottom: -15px; margin-left: 0px}
+
+#burst-12r { background: red;opacity:0.5; margin:10px; width: 40px; height: 40px; position: relative; text-align: center; } #burst-12r:before, #burst-12r:after { content: ""; position: absolute; top: 0; left: 0; height: 40px; width: 40px; background: red; } #burst-12r:before { -webkit-transform: rotate(30deg); -moz-transform: rotate(30deg); -ms-transform: rotate(30deg); -o-transform: rotate(30deg); } #burst-12r:after { -webkit-transform: rotate(60deg); -moz-transform: rotate(60deg); -ms-transform: rotate(60deg); -o-transform: rotate(60deg); }
+
+#burst-12b { background: blue;opacity:0.5; margin:10px; width: 40px; height: 40px; position: relative; text-align: center; } #burst-12b:before, #burst-12b:after { content: ""; position: absolute; top: 0; left: 0; height: 40px; width: 40px; background: blue; } #burst-12b:before { -webkit-transform: rotate(30deg); -moz-transform: rotate(30deg); -ms-transform: rotate(30deg); -o-transform: rotate(30deg); } #burst-12b:after { -webkit-transform: rotate(60deg); -moz-transform: rotate(60deg); -ms-transform: rotate(60deg); -o-transform: rotate(60deg); }
+
+.selectDate {height: 40px; width: 220px; font-size: 18px; margin-right: 25px;}
+.selectTime {height: 38px; width: 70px; font-size: 18px; margin-right: 25px;}
+.selectEvent {height: 45px; width: 220px; font-size: 18px; margin-right: 25px;}
+
+#mytitle{margin-top: 45px; margin-left: 70px;}
+
+.my-legend .legend-title {
+    text-align: left;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 90%;
+    }
+  .my-legend .legend-scale ul {
+    margin: 0;
+    margin-bottom: 15px;
+    padding: 0;
+    float: left;
+    list-style: none;
+    }
+  .my-legend .legend-scale ul {
+    font-size: 80%;
+    list-style: none;
+    margin-left: 0;
+    line-height: 10px;
+    margin-bottom: 2px;
+    }
+  .my-legend ul.legend-labels li span {
+    display: block;
+    float: left;
+    height: 20px;
+    width: 30px;
+    margin-right: 5px;
+    margin-left: 0;
+    //border: 1px solid #999;
+    }
+  .my-legend .legend-source {
+    font-size: 70%;
+    color: #999;
+    clear: both;
+    }
+  .my-legend a {
+    color: #777;
+    }
+p{line-height: 0px; float:  right; margin-top: 3px; font-size: 12px;}
