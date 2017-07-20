@@ -7,7 +7,7 @@ const connect = require('gulp-connect')
 const open = require('gulp-open')
 
 const config = {
-  port: 8000,
+  port: 8080,
   devBaseUrl: 'http:localhost',
   paths: {
     js: './src/**/*.js'
