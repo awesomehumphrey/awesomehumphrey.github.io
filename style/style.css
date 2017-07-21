@@ -1,6 +1,192 @@
-/* ----------- Laptop / landscape tablet screens ----------- */
 @media only screen 
-  and (max-width: 1600px) { /* and (min-width: 1024px) */
+  and (min-width: 768px) 
+  and (max-width: 1024px)
+  and (orientation: landscape)  { /* tablet ipad landscape*/
+body { margin:0; 
+	padding:0; 
+	//background: url("/images/com_bg.png") center top no-repeat;
+    //background-image: url("/images/com_bg.png");
+    background-position-x: center;
+    background-position-y: top;
+    background-size: 120% 15%;
+    background-repeat-x: no-repeat;
+    background-repeat-y: no-repeat;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: #fff;
+    background-color: #fff;}
+  #header {margin-bottom: 0px; margin-top: -10px;}
+  #map { position:relative; top:0; bottom:0; width:750px; height: 400px; margin: 0 auto; margin-right: 140px; margin-top: 0px; background-color: rgba(0,24,72,0.20);}
+  #container {position: relative; border: 2px solid grey; width: 110px; height: 90px; margin-left:20px; float: left; font-size: 0.85em;} 
+  #weekday {margin-top: -7px;}
+  #temp {margin-top: -7px;}
+  #temp ul {display: table; margin-left: 5px; margin-top: -20px; }
+  #temp li {display: block-table;}
+  input {font-size: 24px;}
+  select { font-size: 1em; padding: 10px; vertical-align: bottom; }
+  option {font-size: 1em;}
+  #categories { position:relative; width:500px; height: 75px; margin: 0 auto; margin-top: 0px; margin-left: 120px; font-size: 0.70em; padding: 5px;}
+  
+  //#divLegend {width: 185px; height: 200px; float: right; position: relative; margin-right: 58px; margin-top: 150px; margin-left: 0px;}
+  .legend {list-style: none;}
+  .legend li {float: left; margin-right: 5px; margin-left: 0px;}
+  .legend span {border: 1px solid #ccc; float: left; width: 15px; height: 15px; margin-top: 0px;}
+  //.legend .hot {background-color: red; opacity: 0.5;}
+  //.legend .cold {background-color: blue; opacity: 0.5}
+  #choices {margin-bottom: 5px; margin-top: 12px; font-family: Georgia; font-size: 16px;}
+    
+#baa {margin-bottom: -15px; margin-left: 0px}
+
+#burst-12r { background: red;opacity:0.5; margin:5px; width: 40px; height: 40px; position: relative; text-align: center; } #burst-12r:before, #burst-12r:after { content: ""; position: absolute; top: 0; left: 0; height: 40px; width: 40px; background: red; } #burst-12r:before { -webkit-transform: rotate(30deg); -moz-transform: rotate(30deg); -ms-transform: rotate(30deg); -o-transform: rotate(30deg); } #burst-12r:after { -webkit-transform: rotate(60deg); -moz-transform: rotate(60deg); -ms-transform: rotate(60deg); -o-transform: rotate(60deg); }
+
+#burst-12b { background: blue;opacity:0.5; margin:5px; width: 40px; height: 40px; position: relative; text-align: center; } #burst-12b:before, #burst-12b:after { content: ""; position: absolute; top: 0; left: 0; height: 40px; width: 40px; background: blue; } #burst-12b:before { -webkit-transform: rotate(30deg); -moz-transform: rotate(30deg); -ms-transform: rotate(30deg); -o-transform: rotate(30deg); } #burst-12b:after { -webkit-transform: rotate(60deg); -moz-transform: rotate(60deg); -ms-transform: rotate(60deg); -o-transform: rotate(60deg); }
+
+.selectDate {height: 30px; width: 130px; font-size: 0.85em; margin-right: 15px; font-family: Verdana;}
+.selectTime {height: 25px; width: 60px; font-size: 0.85em; margin-right: 15px; font-family: Verdana; vertical-align: bottom; }
+.selectEvent {height: 35px; width: 130px; font-size: 13px; margin-right: 15px;}
+#play{ height: 31px; width: 60px; font-size: 13px; margin-right: 25px; font-family: Verdana; vertical-align: bottom; vertical-align: bottom;  }
+#or{margin-right: 15px;}
+#mytitle{margin-top: 30px; margin-bottom: 20px; margin-left: 70px;}
+
+.my-legend .legend-title {
+    text-align: left;
+    margin-bottom: 5px;
+	margin-left: 20px;
+    font-weight: bold;
+    font-size: 90%;
+    }
+  .my-legend .legend-scale ul {
+    margin: 0;
+    margin-bottom: 15px;
+    padding: 0;
+    float: left;
+    list-style: none;
+    }
+  .my-legend .legend-scale ul {
+    font-size: 80%;
+    list-style: none;
+    margin-left: 20px;
+    line-height: 10px;
+    margin-bottom: 2px;
+    }
+  .my-legend ul.legend-labels li span {
+    display: block;
+    float: left;
+    height: 20px;
+    width: 30px;
+    margin-right: 5px;
+    margin-left: 0;
+    //border: 1px solid #999;
+    }
+  .my-legend .legend-source {
+    font-size: 70%;
+    color: #999;
+    clear: both;
+    }
+  .my-legend a {
+    color: #777;
+    }
+p{line-height: 0px; float:  right; margin-top: 3px; font-size: 12px;}
+}
+
+
+@media only screen 
+  and (min-width: 768px) 
+  and (max-width: 1024px)
+  and (orientation: portrait)  { /* tablet ipad portrait*/
+body { margin:0; 
+	padding:0; 
+	//background: url("/images/com_bg.png") center top no-repeat;
+    //background-image: url("/images/com_bg.png");
+    background-position-x: center;
+    background-position-y: top;
+    background-size: 120% 15%;
+    background-repeat-x: no-repeat;
+    background-repeat-y: no-repeat;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: #fff;
+    background-color: #fff;}
+  #header {margin-bottom: 0px; margin-top: -10px;}
+  #map { position:relative; top:0; bottom:0; width:550px; height: 400px; margin: 0 auto; margin-right: 100px; margin-top: 0px; background-color: rgba(0,24,72,0.20);}
+  #container {position: relative; border: 2px solid grey; width: 110px; height: 90px; margin-left:0px; float: left; font-size: 0.85em;} 
+  #weekday {margin-top: -7px;}
+  #temp {margin-top: -7px;}
+  #temp ul {display: table; margin-left: 5px; margin-top: -20px; }
+  #temp li {display: block-table;}
+  input {font-size: 24px;}
+  select { font-size: 0.85em; padding: 10px; vertical-align: bottom; }
+  option {font-size: 0.85em;}
+  #categories { position:relative; width:500px; height: 75px; margin: 0 auto; margin-top: 0px; margin-left: 100px; font-size: 0.70em; padding: 5px;}
+  
+  //#divLegend {width: 185px; height: 200px; float: right; position: relative; margin-right: 58px; margin-top: 150px; margin-left: 0px;}
+  .legend {list-style: none;}
+  .legend li {float: left; margin-right: 5px; margin-left: 0px;}
+  .legend span {border: 1px solid #ccc; float: left; width: 15px; height: 15px; margin-top: 0px;}
+  //.legend .hot {background-color: red; opacity: 0.5;}
+  //.legend .cold {background-color: blue; opacity: 0.5}
+  #choices {margin-bottom: 5px; margin-top: 12px; font-family: Georgia; font-size: 16px;}
+    
+#baa {margin-bottom: -15px; margin-left: 0px}
+
+#burst-12r { background: red;opacity:0.5; margin:5px; width: 40px; height: 40px; position: relative; text-align: center; } #burst-12r:before, #burst-12r:after { content: ""; position: absolute; top: 0; left: 0; height: 40px; width: 40px; background: red; } #burst-12r:before { -webkit-transform: rotate(30deg); -moz-transform: rotate(30deg); -ms-transform: rotate(30deg); -o-transform: rotate(30deg); } #burst-12r:after { -webkit-transform: rotate(60deg); -moz-transform: rotate(60deg); -ms-transform: rotate(60deg); -o-transform: rotate(60deg); }
+
+#burst-12b { background: blue;opacity:0.5; margin:5px; width: 40px; height: 40px; position: relative; text-align: center; } #burst-12b:before, #burst-12b:after { content: ""; position: absolute; top: 0; left: 0; height: 40px; width: 40px; background: blue; } #burst-12b:before { -webkit-transform: rotate(30deg); -moz-transform: rotate(30deg); -ms-transform: rotate(30deg); -o-transform: rotate(30deg); } #burst-12b:after { -webkit-transform: rotate(60deg); -moz-transform: rotate(60deg); -ms-transform: rotate(60deg); -o-transform: rotate(60deg); }
+
+.selectDate {height: 30px; width: 130px; font-size: 0.85em; margin-right: 15px; font-family: Verdana;}
+.selectTime {height: 25px; width: 50px; font-size: 0.85em; margin-right: 15px; font-family: Verdana; vertical-align: bottom; }
+.selectEvent {height: 35px; width: 130px; font-size: 13px; margin-right: 15px;}
+#play{ height: 31px; width: 60px; font-size: 13px; margin-right: 25px; font-family: Verdana; vertical-align: bottom; vertical-align: bottom;  }
+#or{margin-right: 15px;}
+#mytitle{margin-top: 30px; margin-bottom: 20px; margin-left: 70px;}
+
+.my-legend .legend-title {
+    text-align: left;
+    margin-bottom: 5px;
+	margin-left: 20px;
+    font-weight: bold;
+    font-size: 90%;
+    }
+  .my-legend .legend-scale ul {
+    margin: 0;
+    margin-bottom: 15px;
+    padding: 0;
+    float: left;
+    list-style: none;
+    }
+  .my-legend .legend-scale ul {
+    font-size: 80%;
+    list-style: none;
+    margin-left: 20px;
+    line-height: 10px;
+    margin-bottom: 2px;
+    }
+  .my-legend ul.legend-labels li span {
+    display: block;
+    float: left;
+    height: 20px;
+    width: 30px;
+    margin-right: 5px;
+    margin-left: 0;
+    //border: 1px solid #999;
+    }
+  .my-legend .legend-source {
+    font-size: 70%;
+    color: #999;
+    clear: both;
+    }
+  .my-legend a {
+    color: #777;
+    }
+p{line-height: 0px; float:  right; margin-top: 3px; font-size: 12px;}
+}
+
+
+/* ----------- Laptop screens ----------- */
+@media only screen and (min-width: 1050px) 
+  and (max-width: 1600px) { /* and (min-width: 1200px) */
 
 body { margin:0; 
 	padding:0; 
@@ -18,13 +204,13 @@ body { margin:0;
     background-color: #fff;}
   #header {margin-bottom: 0px; margin-top: -10px;}
   #map { position:relative; top:0; bottom:0; width:869px; height: 420px; margin: 0 auto; margin-right: 242px; margin-top: 0px; background-color: rgba(0,24,72,0.20);}
-  #container {position: absolute; border: 2px solid grey; width: 140px; height: 120px; margin-left:95px;} 
+  #container {position: relative; border: 2px solid grey; width: 140px; height: 120px; margin-left:95px; float: left;} 
   #weekday {margin-top: -5px;}
   #temp {margin-top: -5px;}
   #temp ul {display: table; margin-left: 5px; margin-top: -20px; }
   #temp li {display: block-table;}
   input {font-size: 24px;}
-  select { font-size: 20px; padding: 10px; }
+  select { font-size: 20px; padding: 10px; vertical-align: bottom;}
   #categories { position:relative; width:800px; height: 75px; margin: 0 auto; margin-top: 0px; margin-left: 240px;}
   
   //#divLegend {width: 185px; height: 200px; float: right; position: relative; margin-right: 58px; margin-top: 150px; margin-left: 0px;}
@@ -44,7 +230,7 @@ body { margin:0;
 .selectDate {height: 30px; width: 220px; font-size: 18px; margin-right: 25px; font-family: Verdana;}
 .selectTime {height: 29px; width: 70px; font-size: 18px; margin-right: 25px; font-family: Verdana;}
 .selectEvent {height: 35px; width: 220px; font-size: 13px; margin-right: 25px;}
-#play{ height: 35px; width: 70px; font-size: 15px; margin-right: 25px; font-family: Verdana;}
+#play{ height: 35px; width: 70px; font-size: 15px; margin-right: 25px; font-family: Verdana; vertical-align: bottom; }
 #or{margin-right: 25px;}
 #mytitle{margin-top: 20px; margin-bottom: 10px; margin-left: 70px;}
 
@@ -131,7 +317,7 @@ body { margin:0;
 
   #baa {background-color: rgba(96,72,120, 1); }
   input {font-size: 24px;} 
-  select { font-size: 20px; padding: 10px; }
+  select { font-size: 20px; padding: 10px; vertical-align: bottom;}
   #categories { position:relative; width:800px; height: 75px; margin: 0 auto; }
   
   #divLegend {width: 300px; height: 200px; float: right; position: relative; margin-right: 151px; margin-left: 50px; margin-top: 100px;}
@@ -152,7 +338,7 @@ body { margin:0;
 .selectTime {height: 40px; width: 70px; font-size: 18px; margin-right: 25px; font-family: Verdana;}
 .selectEvent {height: 42px; width: 220px; font-size: 15px; margin-right: 25px; font-family: Verdana;}
 #or{margin-right: 25px;}
-#play{ height: 39px; width: 70px; font-size: 18px; margin-right: 25px; font-family: Verdana;}
+#play{ height: 39px; width: 70px; font-size: 18px; margin-right: 25px; font-family: Verdana; vertical-align: bottom; }
 
 #mytitle{margin-top: 25px; margin-left: 70px; font-size: 2em;}
 
