@@ -1,4 +1,96 @@
 @media only screen 
+  and (min-width: 320px) 
+  and (max-width: 736px)  { /* mobile and (orientation: landscape)*/
+body { margin:0; 
+	padding:0; 
+	//background: url("/images/com_bg.png") center top no-repeat;
+    //background-image: url("/images/com_bg.png");
+    background-position-x: center;
+    background-position-y: top;
+    background-size: 120% 15%;
+    background-repeat-x: no-repeat;
+    background-repeat-y: no-repeat;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: #fff;
+    background-color: #fff;}
+  #header {margin-bottom: 0px; margin-top: -10px;}
+  #map { position:relative; top:0; bottom:0; width:350px; height: 290px; margin: 0 auto; margin-right: 90px; margin-top: 0px; background-color: rgba(0,24,72,0.20);}
+  #container {position: relative; border: 2px solid grey; width: 100px; height: 75px; margin-left:0px; float: left; font-size: 0.75em;} 
+  #weekday {margin-top: -10px;}
+  #temp {margin-top: -10px;}
+  #temp ul {display: table; margin-left: 5px; margin-top: -20px; }
+  #temp li {display: block-table;}
+  input {font-size: 24px;}
+  select { font-size: 0.85em; padding: 0px; vertical-align: bottom; }
+  option {font-size: 0.85em;}
+  #categories { position:relative; width:500px; height: 65px; margin: 0 auto; margin-top: 0px; margin-left: 0px; font-size: 0.5em; padding: 0px;}
+  
+  //#divLegend {width: 185px; height: 200px; float: right; position: relative; margin-right: 58px; margin-top: 150px; margin-left: 0px;}
+  .legend {list-style: none;}
+  .legend li {float: left; margin-right: 5px; margin-left: 0px;}
+  .legend span {border: 1px solid #ccc; float: left; width: 15px; height: 15px; margin-top: 0px;}
+  //.legend .hot {background-color: red; opacity: 0.5;}
+  //.legend .cold {background-color: blue; opacity: 0.5}
+  #choices {margin-bottom: 5px; margin-top: 10px; font-family: Georgia; font-size: 12px;}
+    
+#baa {margin-bottom: -15px; margin-left: 0px}
+
+#burst-12r { background: red;opacity:0.5; margin:5px; width: 40px; height: 40px; position: relative; text-align: center; } #burst-12r:before, #burst-12r:after { content: ""; position: absolute; top: 0; left: 0; height: 40px; width: 40px; background: red; } #burst-12r:before { -webkit-transform: rotate(30deg); -moz-transform: rotate(30deg); -ms-transform: rotate(30deg); -o-transform: rotate(30deg); } #burst-12r:after { -webkit-transform: rotate(60deg); -moz-transform: rotate(60deg); -ms-transform: rotate(60deg); -o-transform: rotate(60deg); }
+
+#burst-12b { background: blue;opacity:0.5; margin:5px; width: 40px; height: 40px; position: relative; text-align: center; } #burst-12b:before, #burst-12b:after { content: ""; position: absolute; top: 0; left: 0; height: 40px; width: 40px; background: blue; } #burst-12b:before { -webkit-transform: rotate(30deg); -moz-transform: rotate(30deg); -ms-transform: rotate(30deg); -o-transform: rotate(30deg); } #burst-12b:after { -webkit-transform: rotate(60deg); -moz-transform: rotate(60deg); -ms-transform: rotate(60deg); -o-transform: rotate(60deg); }
+
+.selectDate {height: 25px; width: 90px; font-size: 0.85em; margin-right: 10px; font-family: Verdana;}
+.selectTime {height: 25px; width: 40px; font-size: 0.85em; margin-right: 10px; font-family: Verdana; vertical-align: bottom; }
+.selectEvent {height: 30px; width: 95px; font-size: 0.85em; margin-right: 10px;}
+#play{ height: 31px; width: 50px; font-size: 1em; margin-right: 25px; font-family: Verdana; vertical-align: bottom; vertical-align: bottom;  }
+#or{margin-right: 10px;}
+#mytitle{margin-top: 30px; margin-bottom: 10px; margin-left: 70px; font-size: 1.17em; }
+
+.my-legend .legend-title {
+    text-align: left;
+    margin-bottom: 5px;
+	margin-left: 20px;
+    font-weight: bold;
+    font-size: 90%;
+    }
+  .my-legend .legend-scale ul {
+    margin: 0;
+    margin-bottom: 15px;
+    padding: 0;
+    float: left;
+    list-style: none;
+    }
+  .my-legend .legend-scale ul {
+    font-size: 80%;
+    list-style: none;
+    margin-left: 20px;
+    line-height: 10px;
+    margin-bottom: 2px;
+    }
+  .my-legend ul.legend-labels li span {
+    display: block;
+    float: left;
+    height: 20px;
+    width: 30px;
+    margin-right: 5px;
+    margin-left: 0;
+    //border: 1px solid #999;
+    }
+  .my-legend .legend-source {
+    font-size: 70%;
+    color: #999;
+    clear: both;
+    }
+  .my-legend a {
+    color: #777;
+    }
+p{line-height: 0px; float:  right; margin-top: 3px; font-size: 12px;}
+}
+
+
+@media only screen 
   and (min-width: 768px) 
   and (max-width: 1024px)
   and (orientation: landscape)  { /* tablet ipad landscape*/
