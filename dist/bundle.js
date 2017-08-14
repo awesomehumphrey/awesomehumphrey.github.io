@@ -22030,7 +22030,7 @@ function createDonut(cx, cy, hourData, global_color, j) {
   //"hot" half donut
   var points = jaggedDonut(cx, cy, inner_radius[j] + 5, //////////////////////donutMinimumRadius*2 donutMinimumRadius * (avg/1900.0)
   donutMaximumRadius, donutMinimumValue, donutMaximumValue, donutAngle, -1, hourData, hourMin); //avg as function parameter //console.log(avg);
-  let first_half = svg.append("svg:polygon").style("fill", global_color).attr("opacity", 0.75)
+  let first_half = svg.append("svg:polygon").style("fill", global_color).attr("opacity", 0.60)
   //.attr("stroke", "black")
   .attr("points", points);
 
@@ -22074,7 +22074,7 @@ function createMap(locs, data_counts, temp_data, callback) {
   });
 
   var loctypes = ["Attraction", "Dining", "Entertainment", "Housing", "Library", "Meeting Point", "Office", "Park", "Shopping", "Station", "Roadway", "University"];
-  var mycolor = d3.scaleOrdinal(['#FF00FF', '#32CD32', '#002080', '#800000', '#b300b3', '#336600', '#660066', '#2F4F4F', '#CD5C5C', '#7575a3', '#FFA07A', '#BDB76B']); //['#595AB7','#A57706','#D11C24','#C61C6F','#BD3613','#2176C7','#259286','#738A05']     d3.schemeCategory20
+  var mycolor = d3.scaleOrdinal(['#FF00FF', '#32CD32', '#002080', '#800000', '#b300b3', '#336600', '#660066', '#2F4F4F', '#CD5C5C', '#7575a3', '#FFA07A', '#ff6666']); //['#595AB7','#A57706','#D11C24','#C61C6F','#BD3613','#2176C7','#259286','#738A05']     d3.schemeCategory20
 
   g.selectAll("circle").data(locs).enter().append("circle").attr("cx", function (d) {
     return d.lpoints.x;
